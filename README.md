@@ -3,13 +3,13 @@ package that returns if a date is a federal holiday
 
 ## Functions
 
-### holiday_name(date)
-
-returns name of holiday given a date, None if there is no holiday
-
 ### is_federal_holiday(date)
 
 returns True if day is a federal holiday
+
+### holiday_name(date)
+
+returns name of holiday given a date, None if there is no holiday
 
 ### is_weekend(date)
 
