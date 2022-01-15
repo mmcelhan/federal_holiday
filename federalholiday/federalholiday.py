@@ -86,7 +86,7 @@ def to_string_date(date):
 
 
 class FederalHoliday:
-    # class that, given an input date, will return if holiday with the method .federal_holiday()
+    # class that, given an input date, will return if holiday with the method .federalholiday()
     def __init__(self, input_date):
         # get input date without anything else
         self.input_date = datetime.datetime.strptime(str(input_date), '%Y-%m-%d')
