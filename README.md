@@ -39,6 +39,7 @@ The testing file shows all Federal Holidays through 2030 are correctly applied
 ## Examples
 
 import federal_holiday as fh
+
 fh.is_federal_holiday(‘2030-01-01’) # New Years Day, 2030
 Returns True
 
