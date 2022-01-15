@@ -4,38 +4,23 @@ package that returns if a date is a federal holiday
 ## Functions
 
 holiday_name(date)
-""" returns name of holiday given a date, None if there is no holiday """
+returns name of holiday given a date, None if there is no holiday
+
+is_federal_holiday(date)
+returns True if day is a federal holiday
+
+is_weekend(date)
+returns True if day is on a weekend
+
+is_weekday(date)
+returns True if day is on a weekday
 
 
-def is_federal_holiday(date):
-    """ returns True if day is a federal holiday """
-    date = strip_date(date)
-    return FederalHoliday(date).federal_holiday
+is_working_day(date)
+returns True if it's a working day for federal employees
 
-
-def is_weekend(date):
-    """ returns True if day is on a weekend """
-    date = strip_date(date)
-    return FederalHoliday(date).weekend
-
-
-def is_weekday(date):
-    """ returns True if day is on a weekday """
-    date = strip_date(date)
-    return not FederalHoliday(date).weekend
-
-
-def is_working_day(date):
-    """" returns True if it's a working day for federal employees """
-    date = strip_date(date)
-    return (not FederalHoliday(date).federal_holiday) and (not FederalHoliday(date).weekend)
-
-
-def is_off_day(date):
-    """ returns True if it's an off day for federal employees"""
-    date = strip_date(date)
-    return FederalHoliday(date).federal_holiday or FederalHoliday(date).weekend
-
+is_off_day(date)
+returns True if it's an off day for federal employees
 
 ## Installing as a package:
 pip install git+https://github.com/mmcelhan/federal_holiday.git#egg=federal_holiday
