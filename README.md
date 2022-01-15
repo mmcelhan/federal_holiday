@@ -28,7 +28,7 @@ returns True if it's a working day for federal employees
 returns True if it's an off day for federal employees
 
 ## Installing as a package:
-pip install git+https://github.com/mmcelhan/federal_holiday.git#egg=federal_holiday
+pip install git+https://github.com/mmcelhan/federalholiday.git#egg=federalholiday
 
 ## Source Code
 source code is here:
@@ -38,7 +38,7 @@ The testing file shows all Federal Holidays through 2030 are correctly applied
 
 ## Examples
 
-import federal_holiday as fh
+import federalholiday as fh
 
 fh.is_federal_holiday(‘2030-01-01’) # New Years Day, 2030
 
